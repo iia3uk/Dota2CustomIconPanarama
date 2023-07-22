@@ -1,0 +1,45 @@
+<!-- xml reconstructed by ValveResourceFormat: https://vrf.steamdb.info/ -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/multiteam_top_scoreboard.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/shared_scoreboard_styles.vcss_c" />
+	</styles>
+	<script><![CDATA[
+	function PortraitClicked()
+	{
+		Players.PlayerPortraitClicked( $.GetContextPanel().GetAttributeInt( "player_id", -1 ), GameUI.IsControlDown(), GameUI.IsAltDown() );
+	}
+	]]></script>
+	<Panel hittest="false" class="ScoreboardPlayerWrapper">
+		<Panel hittest="false" id="RespawnIndicator">
+			<Panel id="BuyBackPanel" />
+			<Label hittest="false" id="RespawnTimer" />
+		</Panel>
+		<Panel hittest="false" class="ScoreboardPlayer">
+			<Button class="PlayerPortraitWrapper" onmouseactivate="PortraitClicked();">
+				<Panel hittest="false" id="PlayerColorBar" />
+				<Image hittest="false" id="HeroIcon">
+					<DOTAParticleScenePanel id="ThorParticle" style="width:100%;height:100%;opacity:0;" particleName="particles/killstreak/killstreak_glow_topbar_lv2.vpcf" particleonly="true" startActive="true" cameraOrigin="150 50 150" lookAt="0 0 150" fov="50" squarePixels="false" />
+					<DOTAParticleScenePanel id="IronParticle" style="width:100%;height:100%;opacity:0;" particleName="particles/iron_low_topbar_lv2.vpcf" particleonly="true" startActive="true" cameraOrigin="150 50 150" lookAt="0 0 150" fov="50" squarePixels="false" />
+				</Image>
+			</Button>
+			<Image hittest="false" id="DisconnectionIndicator" src="s2r://panorama/images/custom_game/icon_disconnect_png.vtex" />
+		</Panel>
+		<Panel class="cross" id="crosshair" />
+		<Panel hittest="false" id="UltimateIndicatorContainer">
+			<Panel hittest="false" id="UltimateIndicatorBG" class="UltimateIndicatorShared" />
+			<Panel hittest="false" id="UltimateIndicator" class="UltimateIndicatorShared" />
+		</Panel>
+		<Panel id="HealthBarCustom" class="TopBarHealthBarCustom">
+			<Panel class="HealthBackround" />
+			<Panel id="CurrentHealth" class="CurrentHealth" />
+		</Panel>
+		<Panel id="ManaBarCustom" class="TopBarManaBarCustom">
+			<Panel class="ManaBackground" />
+			<Panel id="CurrentMana" class="CurrentMana" />
+		</Panel>
+		<Panel id="BuyBackHas" />
+		<Panel id="Buybacknulsa" />
+	</Panel>
+</root>
