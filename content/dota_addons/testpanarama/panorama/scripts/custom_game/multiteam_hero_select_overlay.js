@@ -60,7 +60,7 @@ function UpdatePlayer( teamPanel, playerId )
 		{
 			hero = "hunter"
 		}		
-		if (playerInfo.player_selected_hero == "npc_dota_hero_doom")
+		if (playerInfo.player_selected_hero == "npc_dota_hero_doom_bringer")
 		{
 			hero = "doom"
 		}		
@@ -91,7 +91,7 @@ function UpdatePlayer( teamPanel, playerId )
 		{
 			hero = "hunter"
 		}		
-		if (playerInfo.possible_hero_selection == "doom")
+		if (playerInfo.possible_hero_selection == "doom_bringer")
 		{
 			hero = "doom"
 		}		
