@@ -1,34 +1,22 @@
 <root>
   <Panel class="AddonLoadingRoot">
-	    <Image id="gamemode" class="SeqImg" src="file://{images}/heroes/aqua.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/dead.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/iron.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/spider.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/strange.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/super.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/thor.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/wolf.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/batman.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/npc_dota_hero_bloodseeker.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_lycan.png" />
+	    <Image id="gamemode" class="SeqImg" src="file://{images}/heroes/bloodseeker.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/destroyer.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/doom.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/hunter.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/ursa.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/venomancer.png" />
 		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_bloodseeker.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_night_stalker.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_sniper.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_omniknight.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_rattletrap.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_dragon_knight.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_broodmother.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_morphling.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_invoker.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_lycan.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_bounty_hunter.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_doom.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_obsidian_destroyer.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_ursa.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/icons/npc_dota_hero_venomancer.png" />
 		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_bloodseeker.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_night_stalker.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_sniper.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_omniknight.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_rattletrap.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_dragon_knight.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_broodmother.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_morphling.png" />
-		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_invoker.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_bounty_hunter.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_doom.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_obsidian_destroyer.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_ursa.png" />
+		<Image id="gamemode" class="SeqImg" src="file://{images}/heroes/selection/npc_dota_hero_venomancer.png" />
   </Panel>
 </root>
