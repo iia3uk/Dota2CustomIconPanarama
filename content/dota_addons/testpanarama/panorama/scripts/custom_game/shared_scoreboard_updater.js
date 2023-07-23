@@ -171,7 +171,20 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 			}
 		}
  
-		
+		let table_skills_deadshot = CustomNetTables.GetTableValue("table_skills", "deadshot" + playerId)
+		if (table_skills_deadshot && table_skills_deadshot.anim == 1 && table_skills_deadshot.team == localPlayerTeamId) 
+		{
+			let effect = playerPanel.FindChildTraverse("crosshair")
+			if (effect) {
+				effect.style.opacity = 1
+			}
+		} else {
+			let effect = playerPanel.FindChildTraverse("crosshair")
+			if (effect) 
+			{
+				effect.style.opacity = 0
+			}
+		}
 
 		var playerPortrait = playerPanel.FindChildInLayoutFile( "HeroIcon" );
 		if ( playerPortrait )
@@ -179,30 +192,30 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 			if ( playerInfo.player_selected_hero !== "" )
 			{
 				let hero = playerInfo.player_selected_hero
-				if (playerInfo.possible_hero_selection == "bloodseeker")
+				if (playerInfo.player_selected_hero == "npc_dota_hero_bloodseeker")
 				{
 					hero = "bloodseeker"
-				}		
-				if (playerInfo.possible_hero_selection == "bounty_hunter")
+				}
+				if (playerInfo.player_selected_hero == "npc_dota_hero_bounty_hunter")
 				{
 					hero = "hunter"
-				}		
-				if (playerInfo.possible_hero_selection == "doom")
+				}
+				if (playerInfo.player_selected_hero == "npc_dota_hero_doom_bringer")
 				{
 					hero = "doom"
-				}		
-				if (playerInfo.possible_hero_selection == "obsidian_destroyer")
+				}
+				if (playerInfo.player_selected_hero == "npc_dota_hero_obsidian_destroyer")
 				{
 					hero = "destroyer"
-				}		
-				if (playerInfo.possible_hero_selection == "ursa")
+				}
+				if (playerInfo.player_selected_hero == "npc_dota_hero_ursa")
 				{
 					hero = "ursa"
-				}		
-				if (playerInfo.possible_hero_selection == "venomancer")
+				}
+				if (playerInfo.player_selected_hero == "npc_dota_hero_venomancer")
 				{
 					hero = "venomancer"
-				}
+				}				
 				playerPortrait.SetImage( "file://{images}/heroes/" + hero + ".png" );
 			}
 			else
