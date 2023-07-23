@@ -179,45 +179,29 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 			if ( playerInfo.player_selected_hero !== "" )
 			{
 				let hero = playerInfo.player_selected_hero
-				if (playerInfo.player_selected_hero == "npc_dota_hero_lycan")
+				if (playerInfo.possible_hero_selection == "bloodseeker")
 				{
-					hero = "wolf"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_bloodseeker")
+					hero = "bloodseeker"
+				}		
+				if (playerInfo.possible_hero_selection == "bounty_hunter")
 				{
-					hero = "flash"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_night_stalker")
+					hero = "hunter"
+				}		
+				if (playerInfo.possible_hero_selection == "doom")
 				{
-					hero = "batman"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_sniper")
+					hero = "doom"
+				}		
+				if (playerInfo.possible_hero_selection == "obsidian_destroyer")
 				{
-					hero = "dead"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_omniknight")
+					hero = "destroyer"
+				}		
+				if (playerInfo.possible_hero_selection == "ursa")
 				{
-					hero = "thor"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_rattletrap")
+					hero = "ursa"
+				}		
+				if (playerInfo.possible_hero_selection == "venomancer")
 				{
-					hero = "iron"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_dragon_knight")
-				{
-					hero = "super"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_broodmother")
-				{
-					hero = "spider"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_morphling")
-				{
-					hero = "aqua"
-				}
-				if (playerInfo.player_selected_hero == "npc_dota_hero_invoker")
-				{
-					hero = "strange"
+					hero = "venomancer"
 				}
 				playerPortrait.SetImage( "file://{images}/heroes/" + hero + ".png" );
 			}
