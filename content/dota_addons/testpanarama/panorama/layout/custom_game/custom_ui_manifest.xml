@@ -18,12 +18,12 @@
 
 		GameUI.CustomUIConfig().team_colors = {}
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "#65d413;"; // { 61, 210, 150 }	--		Teal
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "#fa0000;"; // { 243, 201, 9 }		--		Yellow
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "#fa0000;"; // { 243, 201, 9 }	--		Yellow
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_1] = "#c54da8;"; // { 197, 77, 168 }	--		Pink
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#FF6C00;"; // { 255, 108, 0 }		--		Orange
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "#3455FF;"; // { 52, 85, 255 }		--		Blue
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#FF6C00;"; // { 255, 108, 0 }	--		Orange
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "#3455FF;"; // { 52, 85, 255 }	--		Blue
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "#65d413;"; // { 101, 212, 19 }	--		Green
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_5] = "#815336;"; // { 129, 83, 54 }		--		Brown
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_5] = "#815336;"; // { 129, 83, 54 }	--		Brown
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_6] = "#1bc0d8;"; // { 27, 192, 216 }	--		Cyan
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_7] = "#c7e40d;"; // { 199, 228, 13 }	--		Olive
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_8] = "#8c2af4;"; // { 140, 42, 244 }	--		Purple
@@ -32,45 +32,29 @@
 		var dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent()
         dotaHud.FindChildTraverse("AghsStatusContainer").style.visibility = "collapse";
 	]]></script>
-	<Panel>
-		
-		
-		
+	<Panel>		
 		<CustomUIElement type="HudTopBar" layoutfile="s2r://panorama/layout/custom_game/multiteam_top_scoreboard.vxml_c" />
 		<CustomUIElement type="GameSetup" layoutfile="s2r://panorama/layout/custom_game/team_select.vxml_c" />
 		<CustomUIElement type="FlyoutScoreboard" layoutfile="s2r://panorama/layout/custom_game/multiteam_flyout_scoreboard.vxml_c" />
-		<CustomUIElement type="PregameStrategy" layoutfile="s2r://panorama/layout/custom_game/multiteam_hero_select_overlay.vxml_c" />
-
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/aqua_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/dead_png.vtex" />
+		<CustomUIElement type="PregameStrategy" layoutfile="s2r://panorama/layout/custom_game/multiteam_hero_select_overlay.vxml_c" />		
 		<Image style="opacity:0;" src="s2r://" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/iron_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/spider_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/strange_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/super_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/thor_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/wolf_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/batman_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/npc_dota_hero_bloodseeker_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_lycan_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_bloodseeker_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_night_stalker_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_sniper_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_omniknight_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_rattletrap_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_dragon_knight_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_broodmother_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_morphling_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_invoker_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_lycan_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_bloodseeker_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_night_stalker_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_sniper_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_omniknight_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_rattletrap_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_dragon_knight_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_broodmother_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_morphling_png.vtex" />
-		<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_invoker_png.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/bloodseeker.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/destroyer.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/doom.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/hunter.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/ursa.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/venomancer.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_bloodseeker.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_bounty_hunter.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_doom.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_obsidian_destroyer.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_ursa.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/icons/npc_dota_hero_venomancer.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_bloodseeker.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_bounty_hunter.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_doom.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_obsidian_destroyer.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_ursa.vtex" />
+		<Image<Image style="opacity:0;" src="s2r://panorama/images/heroes/selection/npc_dota_hero_venomancer.vtex" />		
 	</Panel>
 </root>
