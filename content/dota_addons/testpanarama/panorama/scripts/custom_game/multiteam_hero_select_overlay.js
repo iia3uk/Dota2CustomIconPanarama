@@ -52,45 +52,29 @@ function UpdatePlayer( teamPanel, playerId )
 	if ( playerInfo.player_selected_hero !== "" )
 	{
 		let hero = playerInfo.player_selected_hero
-		if (playerInfo.player_selected_hero == "npc_dota_hero_lycan")
-		{
-			hero = "wolf"
-		}
 		if (playerInfo.player_selected_hero == "npc_dota_hero_bloodseeker")
 		{
-			hero = "flash"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_night_stalker")
+			hero = "bloodseeker"
+		}		
+		if (playerInfo.player_selected_hero == "npc_dota_hero_bounty_hunter")
 		{
-			hero = "batman"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_sniper")
+			hero = "hunter"
+		}		
+		if (playerInfo.player_selected_hero == "npc_dota_hero_doom")
 		{
-			hero = "dead"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_omniknight")
+			hero = "doom"
+		}		
+		if (playerInfo.player_selected_hero == "npc_dota_hero_obsidian_destroyer")
 		{
-			hero = "thor"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_rattletrap")
+			hero = "destroyer"
+		}		
+		if (playerInfo.player_selected_hero == "npc_dota_hero_ursa")
 		{
-			hero = "iron"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_dragon_knight")
+			hero = "ursa"
+		}		
+		if (playerInfo.player_selected_hero == "npc_dota_hero_venomancer")
 		{
-			hero = "super"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_broodmother")
-		{
-			hero = "spider"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_morphling")
-		{
-			hero = "aqua"
-		}
-		if (playerInfo.player_selected_hero == "npc_dota_hero_invoker")
-		{
-			hero = "strange"
+			hero = "venomancer"
 		}
 		playerPortrait.SetImage( "file://{images}/heroes/" + hero + ".png" );
 		playerPanel.SetHasClass( "hero_selected", true );
@@ -99,46 +83,31 @@ function UpdatePlayer( teamPanel, playerId )
 	else if ( playerInfo.possible_hero_selection !== "" && ( playerInfo.player_team_id == localPlayerTeamId ) )
 	{
 		let hero = "npc_dota_hero_" + playerInfo.possible_hero_selection
-		if (playerInfo.possible_hero_selection == "lycan")
-		{
-			hero = "wolf"
-		}
 		if (playerInfo.possible_hero_selection == "bloodseeker")
 		{
-			hero = "flash"
-		}
-		if (playerInfo.possible_hero_selection == "night_stalker")
+			hero = "bloodseeker"
+		}		
+		if (playerInfo.possible_hero_selection == "bounty_hunter")
 		{
-			hero = "batman"
-		}
-		if (playerInfo.possible_hero_selection == "sniper")
+			hero = "hunter"
+		}		
+		if (playerInfo.possible_hero_selection == "doom")
 		{
-			hero = "dead"
-		}
-		if (playerInfo.possible_hero_selection == "omniknight")
+			hero = "doom"
+		}		
+		if (playerInfo.possible_hero_selection == "obsidian_destroyer")
 		{
-			hero = "thor"
-		}
-		if (playerInfo.possible_hero_selection == "rattletrap")
+			hero = "destroyer"
+		}		
+		if (playerInfo.possible_hero_selection == "ursa")
 		{
-			hero = "iron"
-		}
-		if (playerInfo.possible_hero_selection == "dragon_knight")
+			hero = "ursa"
+		}		
+		if (playerInfo.possible_hero_selection == "venomancer")
 		{
-			hero = "super"
+			hero = "venomancer"
 		}
-		if (playerInfo.possible_hero_selection == "broodmother")
-		{
-			hero = "spider"
-		}
-		if (playerInfo.possible_hero_selection == "morphling")
-		{
-			hero = "aqua"
-		}
-		if (playerInfo.possible_hero_selection == "invoker")
-		{
-			hero = "strange"
-		}
+		
 		playerPortrait.SetImage( "file://{images}/heroes/" + hero + ".png" );
 		playerPanel.SetHasClass( "hero_selected", false );
 		playerPanel.SetHasClass( "hero_highlighted", true );
