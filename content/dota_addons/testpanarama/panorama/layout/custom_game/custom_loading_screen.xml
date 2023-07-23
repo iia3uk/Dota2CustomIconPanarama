@@ -1,0 +1,10 @@
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/custom_loading_screen.vcss_c" />
+	</styles>
+	<Panel class="MegaDotaRoot">
+		<Image id="gamemode" class="SeqImg" src="file://{images}/custom_game/loading.png" />
+		<Image id="mega_bg1" src="s2r://panorama/images/custom_game/loading_png.vtex" />
+	</Panel>
+</root>
